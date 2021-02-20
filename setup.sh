@@ -12,7 +12,7 @@ Add this to $HOME/.ssh/config:
 
 Host github-gpg4win-deploy
         Hostname github.com
-	IdentityFile /home/doug/.ssh/gpg4win-deploy-key
+	IdentityFile $HOME/.ssh/gpg4win-deploy-key
 EOF
 
 read -p 'Press Enter when you have done this' CONFIRM
