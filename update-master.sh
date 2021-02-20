@@ -7,5 +7,5 @@ SCRIPTDIR=$(readlink -f "$SCRIPTDIR")
 
 cd "$SCRIPTDIR/gpg4win"
 git fetch --all
-git merge --ff-only upstream/master
+git merge upstream/master -m "merge upstream/master"
 git push -q origin master
