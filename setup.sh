@@ -46,4 +46,10 @@ git clone git@github-gpg4win-deploy:drichardson/gpg4win.git
 cd gpg4win
 git remote add upstream git://git.gnupg.org/gpg4win.git
 
-echo Setup complete. You can now run update-master.sh.
+cat <<EOF
+Setup complete. You can now run update-master.sh.
+
+If you want to run this every five minutes, install something like the following entry in crontab:
+
+*/5 * * * * /PATH/TO/GPG4WINUPSTREAMINTEGRATOR/cronic /PATH/TO/GPG4WINUPSTREAMINTEGRATOR/update-master.sh
+EOF
