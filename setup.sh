@@ -45,6 +45,8 @@ cd "$SCRIPTDIR"
 git clone git@github-gpg4win-deploy:drichardson/gpg4win.git
 cd gpg4win
 git remote add upstream git://git.gnupg.org/gpg4win.git
+git config user.email "git@rekt.email"
+git config user.name "Doug Richardson (gpg4win-integrator)"
 
 cat <<EOF
 Setup complete. You can now run update-master.sh.
